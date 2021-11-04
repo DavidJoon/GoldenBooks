@@ -100,6 +100,7 @@
             // 
             this.labelGolden.AutoSize = true;
             this.labelGolden.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelGolden.ForeColor = System.Drawing.Color.Gold;
             this.labelGolden.Location = new System.Drawing.Point(229, 42);
             this.labelGolden.Name = "labelGolden";
             this.labelGolden.Size = new System.Drawing.Size(178, 29);
