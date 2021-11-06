@@ -36,10 +36,6 @@
             this.labelPesqMenu = new System.Windows.Forms.Label();
             this.textBoxPesqMenu = new System.Windows.Forms.TextBox();
             this.dataGridViewMenu = new System.Windows.Forms.DataGridView();
-            this.codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.editora = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ano = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.buttonPesqMenu = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage2 = new System.Windows.Forms.TabPage();
@@ -58,6 +54,10 @@
             this.labelCodRes = new System.Windows.Forms.Label();
             this.buttonAlterar = new System.Windows.Forms.Button();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.editora = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ano = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMenu)).BeginInit();
             this.tabControl1.SuspendLayout();
@@ -92,7 +92,7 @@
             this.adicionarToolStripMenuItem1.BackColor = System.Drawing.Color.DarkRed;
             this.adicionarToolStripMenuItem1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.adicionarToolStripMenuItem1.Name = "adicionarToolStripMenuItem1";
-            this.adicionarToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.adicionarToolStripMenuItem1.Size = new System.Drawing.Size(125, 22);
             this.adicionarToolStripMenuItem1.Text = "Adicionar";
             this.adicionarToolStripMenuItem1.Click += new System.EventHandler(this.adicionarToolStripMenuItem1_Click);
             // 
@@ -127,6 +127,8 @@
             // 
             // dataGridViewMenu
             // 
+            this.dataGridViewMenu.AllowUserToResizeColumns = false;
+            this.dataGridViewMenu.AllowUserToResizeRows = false;
             this.dataGridViewMenu.BackgroundColor = System.Drawing.Color.Maroon;
             this.dataGridViewMenu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewMenu.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -137,30 +139,9 @@
             this.dataGridViewMenu.GridColor = System.Drawing.Color.Black;
             this.dataGridViewMenu.Location = new System.Drawing.Point(3, 126);
             this.dataGridViewMenu.Name = "dataGridViewMenu";
+            this.dataGridViewMenu.RowHeadersWidth = 4;
             this.dataGridViewMenu.Size = new System.Drawing.Size(536, 158);
             this.dataGridViewMenu.TabIndex = 4;
-            // 
-            // codigo
-            // 
-            this.codigo.HeaderText = "Código";
-            this.codigo.Name = "codigo";
-            // 
-            // nome
-            // 
-            this.nome.HeaderText = "Nome";
-            this.nome.Name = "nome";
-            this.nome.Width = 150;
-            // 
-            // editora
-            // 
-            this.editora.HeaderText = "Editora";
-            this.editora.Name = "editora";
-            this.editora.Width = 150;
-            // 
-            // ano
-            // 
-            this.ano.HeaderText = "Ano";
-            this.ano.Name = "ano";
             // 
             // buttonPesqMenu
             // 
@@ -315,7 +296,7 @@
             // 
             // buttonDeletar
             // 
-            this.buttonDeletar.BackColor = System.Drawing.Color.Red;
+            this.buttonDeletar.BackColor = System.Drawing.Color.IndianRed;
             this.buttonDeletar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonDeletar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonDeletar.ForeColor = System.Drawing.Color.Black;
@@ -367,6 +348,29 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Pesquisar por Nome";
             // 
+            // codigo
+            // 
+            this.codigo.HeaderText = "Código";
+            this.codigo.Name = "codigo";
+            this.codigo.Width = 60;
+            // 
+            // nome
+            // 
+            this.nome.HeaderText = "Nome";
+            this.nome.Name = "nome";
+            this.nome.Width = 200;
+            // 
+            // editora
+            // 
+            this.editora.HeaderText = "Editora";
+            this.editora.Name = "editora";
+            this.editora.Width = 200;
+            // 
+            // ano
+            // 
+            this.ano.HeaderText = "Ano";
+            this.ano.Name = "ano";
+            // 
             // MenuLivraria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -409,10 +413,6 @@
         private System.Windows.Forms.TextBox textBoxPesqMenu;
         private System.Windows.Forms.DataGridView dataGridViewMenu;
         private System.Windows.Forms.Button buttonPesqMenu;
-        private System.Windows.Forms.DataGridViewTextBoxColumn codigo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nome;
-        private System.Windows.Forms.DataGridViewTextBoxColumn editora;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ano;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TabPage tabPage1;
@@ -430,5 +430,9 @@
         private System.Windows.Forms.Button buttonDeletar;
         private System.Windows.Forms.Label labelCodRes;
         private System.Windows.Forms.Button buttonAlterar;
+        private System.Windows.Forms.DataGridViewTextBoxColumn codigo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nome;
+        private System.Windows.Forms.DataGridViewTextBoxColumn editora;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ano;
     }
 }

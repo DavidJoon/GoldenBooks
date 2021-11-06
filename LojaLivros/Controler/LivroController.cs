@@ -15,7 +15,7 @@ namespace LojaLivros.Controler
         public void cadastroLivro()
         {
             SqlConnection conexao = new SqlConnection(Conexao.conectar());
-            SqlCommand comando = new SqlCommand("pInserirAluno", conexao);
+            SqlCommand comando = new SqlCommand("pInserirLivro", conexao);
             comando.CommandType = CommandType.StoredProcedure;
 
 
