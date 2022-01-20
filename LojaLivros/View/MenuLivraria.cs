@@ -53,8 +53,8 @@ namespace LojaLivros
             Livro.Editoralivro = textBoxEditoraIns.Text;
             Livro.Anolivro = textBoxAnoIns.Text;
 
-            LivroController alunoController = new LivroController();
-            alunoController.alterarLivro();
+            LivroController LivroController = new LivroController();
+            LivroController.alterarLivro();
 
             limpaTudo();
         }
@@ -85,8 +85,8 @@ namespace LojaLivros
             else
             {
                 Livro.Codigo = Convert.ToInt32(textBoxPesqCod.Text);
-                LivroController aluno = new LivroController();
-                aluno.visuCodigoLivro();
+                LivroController livro = new LivroController();
+                livro.visuCodigoLivro();
                 textBoxNomeIns.Text = Livro.Nomelivro;
                 textBoxEditoraIns.Text = Livro.Editoralivro;
                 textBoxAnoIns.Text = Livro.Anolivro;

@@ -33,7 +33,7 @@ namespace LojaLivros.Controler
                 comando.ExecuteNonQuery();
 
                 var resposta = MessageBox.Show("Livro cadastrado com sucesso! \n" +
-                    "Deseja cadastrar outro Aluno ?",
+                    "Deseja cadastrar outro Livro ?",
                     "Novo Registro", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
 
                 if (resposta == DialogResult.Yes)
